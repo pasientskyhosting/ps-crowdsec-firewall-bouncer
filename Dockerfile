@@ -2,7 +2,7 @@ FROM debian:buster-slim
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y -q --install-recommends --no-install-suggests tzdata procps netbase iproute2 ipset curl && \
+    apt-get install -y -q --install-recommends --no-install-suggests tzdata procps netbase iproute2 ipset curl nftables && \
     mkdir -p /etc/crowdsec/bouncers/ && \
     mkdir -p /var/run/crowdsec/ && \
     rm -rf /var/lib/apt/lists/*
