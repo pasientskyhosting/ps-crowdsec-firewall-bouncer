@@ -1,0 +1,12 @@
+.DS_Store
+.cache
+.cache/*
+**/.cache
+
+*.retry
+*.pyc
+
+.vscode/*
+
+**/node_modules
+**/public/js

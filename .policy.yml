@@ -1,0 +1,9 @@
+---
+
+# The remote repository to read the policy file from. This is required, and must
+# be in the form of "org/repo-name". Must be a public repository.
+remote: pasientskyhosting/merge-policies
+
+# The path to the policy config file in the remote repository. If none is
+# specified, the default path in the server config is used.
+path: policies/approve-everything.yml
