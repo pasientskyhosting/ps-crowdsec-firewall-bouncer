@@ -1,14 +1,14 @@
 mode: nftables
 pid_dir: /var/run/
-update_frequency: 10s
-daemonize: true
+update_frequency: {UPDATE_FREQ}
+daemonize: false
 log_mode: stdout
 log_dir: /var/log/
 log_level: info
 api_url: {API_URL}
 api_key: {API_KEY}
 disable_ipv6: false
-deny_action: REJECT
+deny_action: DROP
 deny_log: false
 supported_decisions_types:
   - ban
